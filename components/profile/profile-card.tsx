@@ -7,7 +7,7 @@ import { ProfileDownload } from '@/components/profile/profile-download'
 
 export function ProfileCard() {
 	return (
-		<article className="mx-auto flex min-h-[100svh] max-w-md flex-col px-8 pb-6 pt-8">
+		<article className="mx-auto flex min-h-[100dvh] max-w-md flex-col px-8 pb-6 pt-8">
 			<ProfileHeader profile={profile} />
 			<ProfileLinks profile={profile} className="mt-8" />
 			<ProfileContact profile={profile} className="mt-8" />

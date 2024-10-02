@@ -2,9 +2,14 @@
 
 ## Roadmap
 
-- [ ] Write documentation
+- [ ] Improve dark theme
+- [ ] Add favicon
+- [ ] Write documentation on how to use
+  - [ ] How to edit profile info
+  - [ ] How to change profile image (use JPEG and mention where it's referenced)
 - [ ] Add examples uses cases (QR code and NFC)
 - [ ] Add instant deployment via Vercel
+- [ ] Add a note about sensitive information and using .env variables to store them
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
