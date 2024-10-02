@@ -2,26 +2,167 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* adapted Radix Colors, based on this repo with HSL values
+    https://github.com/wallpants/hsl-radix-colors/tree/main
+  */
+
+/* @layer base {
+
+	:root,
+	.light,
+	.light-theme {
+		--sand-1: 60deg 20% 99%;
+		--sand-2: 60deg 7.7% 97.5%;
+		--sand-3: 30deg 6.7% 94.1%;
+		--sand-4: 40deg 6.4% 90.8%;
+		--sand-5: 45deg 6.5% 87.8%;
+		--sand-6: 45deg 5.1% 84.7%;
+		--sand-7: 48deg 5% 80.2%;
+		--sand-8: 51deg 5% 72.4%;
+		--sand-9: 60deg 3% 53.9%;
+		--sand-10: 60deg 2.4% 49.8%;
+		--sand-11: 60deg 2.6% 37.8%;
+		--sand-12: 48deg 8.2% 12%;
+	}
+	.dark,
+	.dark-theme {
+		--sand-1: 10deg 3% 6.5%;
+		--sand-2: 60deg 2% 9.6%;
+		--sand-3: 60deg 1.5% 13.1%;
+		--sand-4: 60deg 2.4% 16.1%;
+		--sand-5: 60deg 3.2% 18.6%;
+		--sand-6: 45deg 3.5% 22.4%;
+		--sand-7: 48deg 3.5% 27.6%;
+		--sand-8: 43deg 3.7% 37.1%;
+		--sand-9: 47deg 4.2% 41.8%;
+		--sand-10: 53deg 3.3% 47.1%;
+		--sand-11: 45deg 5.1% 69.4%;
+		--sand-12: 60deg 5.6% 92.9%;
+	}
+
+	:root {
+		--background: var(--sand-4);
+		--foreground: var(--sand-12);
+		--card: var(--sand-1);
+		--card-foreground: var(--sand-11);
+		--popover: var(--sand-1);
+		--popover-foreground: var(--sand-11);
+		--primary: var(--sand-12);
+		--primary-foreground: var(--sand-2);
+		--secondary: var(--sand-2);
+		--secondary-foreground: var(--sand-11);
+		--muted: var(--sand-5);
+		--muted-foreground: var(--sand-10);
+		--accent: var(--sand-4);
+		--accent-foreground: var(--sand-11);
+		--destructive: var(--red-4);
+		--destructive-foreground: var(--red-11);
+		--success: var(--green-4);
+		--success-foreground: var(--green-11);
+		--border: var(--sand-6);
+		--input: var(--sand-6);
+		--ring: var(--sand-7);
+
+		--radius: 0.35rem;
+		--bg-noise-opacity: 0.025;
+	}
+} */
+@layer base {
+	:root {
+		--sand-1: 60deg 20% 99%;
+		--sand-2: 60deg 7.7% 97.5%;
+		--sand-3: 30deg 6.7% 94.1%;
+		--sand-4: 40deg 6.4% 90.8%;
+		--sand-5: 45deg 6.5% 87.8%;
+		--sand-6: 45deg 5.1% 84.7%;
+		--sand-7: 48deg 5% 80.2%;
+		--sand-8: 51deg 5% 72.4%;
+		--sand-9: 60deg 3% 53.9%;
+		--sand-10: 60deg 2.4% 49.8%;
+		--sand-11: 60deg 2.6% 37.8%;
+		--sand-12: 48deg 8.2% 12%;
+	}
+
+	:root {
+		--background: var(--sand-4);
+		--foreground: var(--sand-12);
+		--card: var(--sand-1);
+		--card-foreground: var(--sand-11);
+		--popover: var(--sand-1);
+		--popover-foreground: var(--sand-11);
+		--primary: var(--sand-12);
+		--primary-foreground: var(--sand-2);
+		--secondary: var(--sand-2);
+		--secondary-foreground: var(--sand-11);
+		--muted: var(--sand-5);
+		--muted-foreground: var(--sand-10);
+		--accent: var(--sand-4);
+		--accent-foreground: var(--sand-11);
+		--destructive: var(--red-4);
+		--destructive-foreground: var(--red-11);
+		--success: var(--green-4);
+		--success-foreground: var(--green-11);
+		--border: var(--sand-6);
+		--input: var(--sand-6);
+		--ring: var(--sand-7);
+
+		--radius: 0.35rem;
+		--bg-noise-opacity: 0.025;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--background: var(--sand-12);
+			--foreground: var(--sand-1);
+			--card: var(--sand-11);
+			--card-foreground: var(--sand-2);
+			--popover: var(--sand-11);
+			--popover-foreground: var(--sand-2);
+			--primary: var(--sand-1);
+			--primary-foreground: var(--sand-11);
+			--secondary: var(--sand-8);
+			--secondary-foreground: var(--sand-12);
+			--muted: var(--sand-8);
+			--muted-foreground: var(--sand-10);
+			--accent: var(--sand-4);
+			--accent-foreground: var(--sand-11);
+			--destructive: var(--red-4);
+			--destructive-foreground: var(--red-11);
+			--success: var(--green-4);
+			--success-foreground: var(--green-11);
+			--border: var(--sand-6);
+			--input: var(--sand-6);
+			--ring: var(--sand-7);
+
+			--bg-noise-opacity: 0.01;
+		}
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background font-sans text-foreground antialiased;
+		text-rendering: optimizeLegibility;
+	}
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+	.bg-noise::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/noise.png');
+		background-repeat: repeat;
+		background-size: 182px;
+		opacity: var(--bg-noise-opacity, 0.025);
+	}
 }
