@@ -72,7 +72,7 @@ function getButtonSublabel(type: ContactItemTypes, url: string) {
 		case 'email':
 			return url
 		case 'whatsapp':
-			return url.split('/').pop() || ''
+			return `+${url.split('/').pop()}` || ''
 		case 'x':
 			return `@${url.split('/').pop() || ''}`
 		case 'linkedin':

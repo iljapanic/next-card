@@ -11,7 +11,7 @@ export const profile: Profile = {
 	socials: [
 		{
 			type: 'linkedin',
-			url: 'https://linkedin.com/johndoe',
+			url: 'https://linkedin.com/in/johndoe',
 		},
 		{
 			type: 'whatsapp',
