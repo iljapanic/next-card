@@ -2,9 +2,9 @@
 
 ## Roadmap
 
-- [x] Improve dark theme
+- [x] improve dark theme
 - [x] switch to using profile.example.tsx
-- [ ] Generate favicon from profile image
+- [x] change favicon
 - [ ] Write documentation on how to use
   - [ ] How to edit profile info
   - [ ] How to change profile image (use JPEG and mention where it's referenced)
