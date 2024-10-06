@@ -5,6 +5,7 @@
 - [x] improve dark theme
 - [x] switch to using profile.example.tsx
 - [x] change favicon
+- [ ] duplicate profile.example.tsx to profile.ts on example Vercel site
 - [ ] Write documentation on how to use
   - [ ] How to edit profile info
   - [ ] How to change profile image (use JPEG and mention where it's referenced)
