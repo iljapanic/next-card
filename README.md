@@ -3,7 +3,7 @@
 ## Roadmap
 
 - [ ] Improve dark theme
-- [ ] Add favicon
+- [ ] Generate favicon from profile image
 - [ ] Write documentation on how to use
   - [ ] How to edit profile info
   - [ ] How to change profile image (use JPEG and mention where it's referenced)
