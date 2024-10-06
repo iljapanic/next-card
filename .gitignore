@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# don't commit profile.ts (uses profile.example.ts to show the structure)
+profile.ts
