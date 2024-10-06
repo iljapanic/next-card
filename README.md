@@ -3,7 +3,7 @@
 ## Roadmap
 
 - [x] Improve dark theme
-- [ ] switch to using profile.example.tsx
+- [x] switch to using profile.example.tsx
 - [ ] Generate favicon from profile image
 - [ ] Write documentation on how to use
   - [ ] How to edit profile info
